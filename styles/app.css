@@ -1,0 +1,102 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(67, 67, 67);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 500px;
+    margin: auto;
+    margin-top: 24px;
+    background-color: white;
+    border-radius: 24px;
+    position: relative;
+}
+
+#todo-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-bottom: 24px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+
+input {
+    flex: 1;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    color: rgb(67, 67, 67);
+    line-height: 1.5;
+    margin-right: 24px;
+}
+
+button {
+    all: unset;
+    color: white;
+    border-radius: 24px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(85, 8, 193);
+    border: 1px solid white;
+}
+/* flip on hover */
+button:hover {
+    all: unset;
+    color: rgb(85, 8, 193);
+    background-color: white;
+    border: 1px solid rgb(85, 8, 193);
+    border-radius: 24px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#todo-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#todo-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+#todo-output {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-output li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+#todo-output li:last-child {
+    border-bottom: none;
+}
+
+#todo-output li:hover {
+    background-color: rgb(237, 237, 237);
+    color: rgb(85, 8, 193);
+}
